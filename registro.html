@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            background-image: url(./montañismo.jpg);
+            background-position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form{
+            padding-left:25% ;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button{
+            margin-top:2%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h3{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="./envio.html" method="get" required>
+                <h3>NOMBRES</h3>
+                <input type="text" placeholder="ingrese sus nombres" required>
+                <h3>APELLIDOS</h3>
+                <input type="text" placeholder="ingrese sus apellidos" required>
+                <h3>correo</h3>
+                <input type="text" placeholder="ingrese su correo" required>
+                <h3>numero de documento</h3> 
+                <input type="number" placeholder="ingrese su numero de documento" required>
+                <h3>seleccione el tipo de documento</h3>
+                    <select name="seleccionar" required>
+                    <option value="">seleccionar</option>
+                    <option value="">cedula de ciudadania</option>
+                    <option value="">cedula de extrangeria</option>
+                </select>
+            <h3>adjuntar foto</h3>
+                <input type="file" name="imagen" required>
+            <h3>telefono</h3>
+                <input type="number" placeholder="ingrese el numero" required>
+            <h3>seleccione el genero</h3>
+            femenino
+                <input type="radio" required>
+            masculino
+                <input type="radio" required>
+            <h3>seleccione la ciudad</h3>
+            <select name="seleccionar" required>
+                <option value="">seleccionar</option>
+                <option value="">dolores</option>
+                <option value="">natagaima</option>
+                <option value="">ibague</option>
+                <option value="">mariquita</option>
+                <option value="">manizales</option>
+                <option value="">neiva</option>
+                <option value="">bogota</option>
+                <option value="">bolivar</option>
+                <option value="">atlantico</option>
+                <option value="">antioquia</option>
+            </select>
+            <br>
+            <button type="submit">enviar</button>
+    </form>
+</body>
+</html>
